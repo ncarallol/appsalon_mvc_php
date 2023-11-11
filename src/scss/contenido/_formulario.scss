@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario {
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+
+    label {
+    flex: 0 0 10rem;
+
+    }
+    input {
+    flex: 1;
+    padding: calc(v.$separacion / 4);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    &:disabled {
+        background-color: darken(v.$blanco, 20%);
+        cursor: not-allowed;
+        text-transform: capitalize;
+    }
+    }
+}
+.enlace {
+    
+
+}

@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+
+.seccion {
+
+    p {
+        text-transform: capitalize;
+    }
+
+    .nombre-cliente {
+        border-top: 1px solid v.$gris;
+        padding-top: 2rem;
+    }
+    span {
+        font-weight: v.$bold;
+    }
+
+    .contenedor-servicio {
+        display: inline-block;
+        min-width: 32rem;
+        border-radius: 1rem;
+        background-color: v.$azul;
+        text-align: center;
+        font-weight: v.$bold;
+        padding: 1rem;
+        margin: 0 2rem 2rem 0;
+    }
+}
+.swal2-popup {
+    font-size: 2rem !important;
+    
+  }

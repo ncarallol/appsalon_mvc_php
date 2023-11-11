@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion {
+    padding: 3rem 0;
+    display: none;
+    .text-center {
+        text-align: center;
+    }
+}
+.mostrar {
+    display: block;
+}
+.ocultar {
+    display: none;
+}
+.barra {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: capitalize;
+    margin-bottom: 1rem ;
+
+    p {
+        margin-right: 4rem;
+    }
+
+    .logout {
+        display: flex;
+        flex-direction: column;
+
+        small {
+            color: v.$blanco;
+        }
+    }
+}

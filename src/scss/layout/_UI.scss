@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-app {
+    @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 100vh;
+    }
+    .imagen {
+        min-height: 20rem;
+        background-image: url('../img/1.jpg');
+        background-size: cover;
+        background-position:center center ;
+    }
+}
+
+
+.contenido {
+    margin: 0 2rem;
+    max-width: 95%;
+    padding-top: 3rem;
+    overflow-y: scroll;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.barra-servicios {
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .servicios {
+        margin: 0 0 1rem 0;
+    }
+}

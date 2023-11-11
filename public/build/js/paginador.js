@@ -1,0 +1,1 @@
+function paginador(){const o=document.querySelector(".anterior"),s=document.querySelector(".siguiente");1===paso?o.classList.add("ocultar"):3===paso?s.classList.add("ocultar"):(o.classList.remove("ocultar"),s.classList.remove("ocultar"))}
